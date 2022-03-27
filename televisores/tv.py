@@ -1,3 +1,5 @@
+from televisores.marca import Marca
+from televisores.control import Control
 class TV:
   _numTV=0
   def __init__(self,marca,estado):
