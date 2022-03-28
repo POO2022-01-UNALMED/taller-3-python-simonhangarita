@@ -18,10 +18,10 @@ class TV:
   def setPrecio(self,precio2):
     self._precio=precio2
   def setVolumen(self,volumen2):
-    if (self.getEstado() and 1<=volumen2 and volumen2<=120):
+    if (self.getEstado() and 0<=volumen2 and volumen2<=7):
       self._volumen=volumen2
   def setCanal(self,canal2):
-    if (self.getEstado() and 0<=canal2 and canal2<=7):
+    if (self.getEstado() and 1<=canal2 and canal2<=120):
       self._canal=canal2
   def getMarca(self):
     return self._marca
