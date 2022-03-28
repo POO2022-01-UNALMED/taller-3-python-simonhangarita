@@ -33,10 +33,12 @@ class TV:
     return self._volumen
   def getCanal(self):
     return self._canal
-  def getNumTV(self):
-    return TV._numTV
-  def setNumTV(self,num):
-    TV._numTV=num
+  @classmethod
+  def getNumTV(cls):
+    return cls._numTV
+  @classmethod
+  def setNumTV(cls,num):
+    cls._numTV=num
   def turnOn(self):
     if(self._estado==False):
       self._estado=True
