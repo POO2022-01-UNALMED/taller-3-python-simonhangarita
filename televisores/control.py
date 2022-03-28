@@ -6,6 +6,10 @@ class Control:
     self._tv.turnOn()
   def turnOff(self):
     self._tv.turnOff()
+  def volumenUp(self):
+    self._tv.volumenUp();
+  def volumenDown(self):
+    self._tv.volumenDown()
   def canalUp(self):
     self._tv.canalUp()
   def canalDown(self):
